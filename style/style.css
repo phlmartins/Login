@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/*
+    Paleta de Cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+    Preto: #272727
+    Red: #d60202
+    Azul: #58a6ff
+*/
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    background-color: #272727;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+    background-color: #FFF;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #272727 url(../images/mylobby.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: .8em;
+}
+
+form > div.campo {
+    background-color: #272727;
+    border: 2px solid #272727;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+
+}
+
+div.campo > i{
+    color: #FFF;
+    font-size: 2em;
+    width: 40px;
+    /* padding: 5px; */
+    
+}
+
+div.campo > input {
+    background-color: #070505d2;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    transform: translateY(-10px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within {
+    background-color: #fff;
+    border: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    background-color: #272727;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #d60202;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    /* background-color: #272727; */
+
+    color: #0075fc;
+    /* color: #fff; */
+    /* border: 1px solid ;  */
+    /* border-radius: 5px;
+    padding-top: 4px; */
+    text-decoration: none;
+    
+}
+
+.p2 {
+    text-align: center;
+}
+
+.p2 > a {
+    color: #0075fc;
+    margin-left: 10px;
+    text-decoration: none;
+
+}
+
+form > a.botao:hover{
+    /* background-color: #d60202; */
+    text-decoration: underline;
+
+}
+
+.p2 > a.botao-conta:hover{
+    
+    text-decoration: underline;
+
+}
+form > a.botao > i {
+    font-size: 1em;
+}
